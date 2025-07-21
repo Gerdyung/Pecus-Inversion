@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pecus</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pecus Inversion</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Asset</th>
+                <th>Units</th>
+                <th>Price per unit</th>
+                <th>Investment</th>
+            </tr>
+        </thead>
+        <tbody id="portfolio">
+            <tr>
+                <td>Solana</td>
+                <td><input type="number" value="0.005"></td>
+                <td><input type="number" value="10"></td>
+                <td class="Investment">0</td>
+            </tr>
+            <tr>
+                <td>TRUMP</td>
+                <td><input type="number" value="0.000001"></td>
+                <td><input type="number" value="10"></td>
+                <td class="Investment">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="calculate()">calculate</button>
+    <p>Total: $<span id="Total">0</span></p>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            background: #4f4f4f;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+        }
+        th, td{
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        input{
+            width: 75px;
+        }
+        .summary{
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+    </style>
+
+</body>
+</html>
